@@ -5,5 +5,5 @@ numpy
 keras-facenet
 mtcnn
 ultralytics
-tensorflow==2.10.0
+tensorflow==2.19.0
 scikit-learn
