@@ -9,7 +9,7 @@ import uuid
 from flask import url_for
 
 facenet_model = FaceNet()
-yolo_model = YOLO("models/yolov8n-face.pt")
+yolo_model = YOLO("models/yolov8n-face-lindevs.pt")
 UNKNOWN_DIR = "Unknown_Faces"
 os.makedirs(UNKNOWN_DIR, exist_ok=True)
 
