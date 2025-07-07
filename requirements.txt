@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+opencv-python
+numpy
+keras-facenet
+mtcnn
+tensorflow
+ultralytics
+tensorflow
+scikit-learn
