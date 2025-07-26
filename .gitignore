@@ -1,1 +1,11 @@
 venv/
+_pycache/
+__pycache__/
+models
+*.pkl
+render.yaml
+runtime.txt
+apt.txt
+.gitignore
+.python-version
+*.log
