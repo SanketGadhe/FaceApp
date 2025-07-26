@@ -3,6 +3,7 @@ _pycache/
 __pycache__/
 models
 *.pkl
+.env
 render.yaml
 runtime.txt
 apt.txt
