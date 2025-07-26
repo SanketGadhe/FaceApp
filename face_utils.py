@@ -9,9 +9,11 @@ import uuid
 from flask import url_for
 
 facenet_model = FaceNet()
-yolo_model = YOLO("models/yolov8n-face-lindevs.pt")
-UNKNOWN_DIR = "Unknown_Faces"
-os.makedirs(UNKNOWN_DIR, exist_ok=True)
+YOLO_MODEL_PATH = "models\yolov8n-face-lindevs.pt"  # Path to your YOLO model
+yolo_model = YOLO(YOLO_MODEL_PATH)
+
+# UNKNOWN_DIR = "Unknown_Faces"
+# os.makedirs(UNKNOWN_DIR, exist_ok=True)
 
 def detect_and_crop_faces(image):
     results = yolo_model(image)

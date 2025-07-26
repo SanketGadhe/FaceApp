@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: FaceApp
-    env: python
-    runtime: python-3.10
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    plan: free
-    region: oregon

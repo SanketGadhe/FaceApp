@@ -1,9 +1,24 @@
-Flask
-Flask-Cors
-opencv-python
-numpy
-keras-facenet
-mtcnn
-ultralytics
-tensorflow
-scikit-learn
+Flask==2.3.3
+Flask-Cors==4.0.0
+# Using opencv-python-headless for server environments (no GUI dependencies)
+# opencv-python-headless has Python 3.12 wheels according to PyPI
+opencv-python-headless==4.9.0.80 
+numpy==1.26.4
+# mtcnn might be the tricky one. Keep 1.0.0, but prepare for source build.
+mtcnn==1.0.0
+# keras-facenet 0.3.2 is old and only officially supported up to Python 3.5.
+# This might be a major source of instability or errors.
+# Consider a more modern FaceNet implementation or a fork of keras-facenet that supports 3.12.
+# If you must keep it, the build might fail or behave unexpectedly.
+keras-facenet==0.3.2 
+ultralytics==8.1.42 # Ultralytics has Python 3.12 support.
+tensorflow==2.16.1 # TensorFlow 2.16.1 has Python 3.12 support.
+scikit-learn==1.4.2
+boto3==1.34.113
+requests==2.32.3
+gunicorn==22.0.0
+python-dotenv==1.0.1
+# dlib==19.24.2: dlib 19.24.2 does NOT have official Python 3.12 wheels.
+# dlib 20.0.0 (released May 2025) is the first version with Python 3.12 wheels.
+# UPDATE DLIB VERSION TO 20.0.0 or LATER to ensure 3.12 compatibility!
+dlib==20.0.0 
