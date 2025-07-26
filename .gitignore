@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 venv/
 _pycache/
 __pycache__/
@@ -10,3 +11,6 @@ apt.txt
 .gitignore
 .python-version
 *.log
+=======
+venv/
+>>>>>>> parent of 0e0af84 (Flask s3 link)
